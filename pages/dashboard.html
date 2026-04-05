@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Singh Studio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+<!-- 🔝 Navbar -->
+<header class="navbar">
+    <h2>Singh Studio</h2>
+    <button id="logoutBtn">Logout</button>
+</header>
+
+<!-- 📦 Main -->
+<div class="dashboard-container">
+
+    <!-- 👤 Profile -->
+    <div class="profile">
+        <h2>Welcome, <span id="username">User</span></h2>
+        <p>Your selected photos: <span id="selectedCount">0</span></p>
+    </div>
+
+    <!-- 🖼️ Photo Grid -->
+    <div class="photo-grid" id="photoGrid">
+        <!-- Images will come from JS -->
+    </div>
+
+    <!-- 🎯 Actions -->
+    <div class="actions">
+        <button id="selectBtn">Select</button>
+        <button id="unselectBtn">Unselect</button>
+        <button id="downloadBtn">Download Selected</button>
+    </div>
+
+</div>
+<script src="../js/api.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,77 @@
+/* 🔥 Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌑 Body */
+body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔝 Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #000;
+}
+
+.navbar button {
+    background: gold;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* 📦 Container */
+.dashboard-container {
+    padding: 20px;
+}
+
+/* 👤 Profile */
+.profile {
+    margin-bottom: 20px;
+}
+
+/* 🖼️ Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+}
+
+/* 🖼️ Image Card */
+.photo {
+    position: relative;
+    cursor: pointer;
+}
+
+.photo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ✅ Selected */
+.photo.selected {
+    outline: 3px solid gold;
+}
+
+/* 🎯 Actions */
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    padding: 10px;
+    border: none;
+    background: gold;
+    cursor: pointer;
+}

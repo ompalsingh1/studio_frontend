@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery | Singh Studio</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+<!-- 🔝 Navbar -->
+<header class="navbar">
+    <div class="container">
+        <h1 class="logo">Singh Studio</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<!-- 🖼️ Gallery Section -->
+<section class="services container" style="margin-top:80px;">
+
+    <h2 class="section-title">Our Gallery</h2>
+
+    <!-- 🎯 Filters -->
+    <div class="filters">
+        <button onclick="filterImages('all')">All</button>
+        <button onclick="filterImages('wedding')">Wedding</button>
+        <button onclick="filterImages('portrait')">Portrait</button>
+        <button onclick="filterImages('event')">Events</button>
+    </div>
+
+    <!-- 📸 Images -->
+    <div class="gallery-grid" id="gallery">
+
+        <img src="../WhatsApp Image 2026-04-04 at 11.09.30 PM.jpeg" data-category="wedding">
+        <img src="../WhatsApp Image 2026-04-04 at 11.10.50 PM.jpeg" data-category="portrait">
+        <img src="../WhatsApp Image 2026-04-04 at 11.10.14 PM.jpeg" data-category="event">
+        <img src="../WhatsApp Image 2026-04-04 at 11.12.29 PM.jpeg" data-category="wedding">
+        <img src="../WhatsApp Image 2026-04-04 at 11.09.30 PM.jpeg" data-category="wedding">
+        <img src="../WhatsApp Image 2026-04-04 at 11.10.50 PM.jpeg" data-category="portrait">
+        <img src="../WhatsApp Image 2026-04-04 at 11.10.14 PM.jpeg" data-category="event">
+        <img src="../WhatsApp Image 2026-04-04 at 11.12.29 PM.jpeg" data-category="wedding">
+
+    </div>
+
+</section>
+
+<!-- 🔍 Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span id="close">&times;</span>
+    <img id="lightboxImg">
+</div>
+
+<script src="../js/gallery.js"></script>
+
+</body>
+</html>
