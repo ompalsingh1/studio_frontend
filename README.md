@@ -19,7 +19,7 @@ HTML, CSS, JavaScript
 [https://localhost](http://localhost:3000/)
 
 📂 Installation
-git clone https://github.com/your-username/frontend-repo.git
+git clone (https://github.com/ompalsingh1/studio_frontend/tree/main)
 cd frontend-repo
 npm install
 npm start
