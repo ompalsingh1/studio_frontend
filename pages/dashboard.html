@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Singh Studio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+
+<body>
+
+<!-- 🔝 Navbar -->
+<header class="navbar">
+    <h2>Singh Studio</h2>
+    <button id="logoutBtn">Logout</button>
+</header>
+
+<!-- 📦 Main -->
+<div class="dashboard-container">
+
+    <!-- 👤 Profile -->
+    <div class="profile">
+        <h2>Welcome, <span id="username">User</span></h2>
+        <p>New selected photos: <span id="selectedCount">0</span></p>
+        <span>Your old selection will be deleted if you selected the new photoes</span>
+    </div>
+
+    <!-- 🖼️ Photo Grid -->
+    <div class="photo-grid" id="photoGrid">
+        <!-- Images will come from JS -->
+    </div>
+
+    <!-- 🎯 Actions -->
+    <div class="actions">
+        <button id="selectBtn">Select</button>
+        <button id="downloadBtn">Download Selected</button>
+    </div>
+
+    <p>Total photos: <span id="totalPhotos"></span></p>
+    <p>Selected photos: <span id="selectedPhotos"></span></p>
+
+    <!-- <div class="photo-grid" id="selectedPhotoGrid"></div> -->
+</div>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" class="lightbox">
+
+    <!-- CLOSE -->
+    <span id="closeBtn" class="close-btn">&times;</span>
+
+    <!-- PREV -->
+    <span id="prevBtn" class="nav-btn prev-btn">
+        &#10094;
+    </span>
+
+    <!-- IMAGE -->
+    <img id="lightboxImg" class="lightbox-img">
+
+    <!-- NEXT -->
+    <span id="nextBtn" class="nav-btn next-btn">
+        &#10095;
+    </span>
+
+    <!-- SELECT BUTTON -->
+    <button id="selectImageBtn" class="select-image-btn">
+        Select Photo
+    </button>
+
+</div>
+<script src="../js/api.js"></script>
+<script src="../js/dashboard.js"></script>
+
+</body>
+</html>

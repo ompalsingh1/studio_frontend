@@ -1,0 +1,274 @@
+/* 🔥 Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌑 Body */
+body {
+    background: #0a0a0a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* 🔝 Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #000;
+    transform: translateY(-100%);
+  animation: slideDown 1s forwards;
+}
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+  }
+}
+
+.navbar button {
+    background: gold;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+/* 📦 Container */
+.dashboard-container {
+    padding: 20px;
+    transform: translateY(100vh);
+  animation: fadeUp 2s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} 
+
+.dashboard-container p {
+    padding: 20px;
+    font-size: 25px;
+    text-align: center;
+}
+
+.dashboard-container span {
+    color: gold;
+    font-weight: bold;
+}
+
+/* 👤 Profile */
+.profile {
+    margin-bottom: 20px;
+}
+
+/* 🖼️ Grid */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 10px;
+    
+}
+
+/* 🖼️ Image Card */
+.photo {
+  width: 150px;
+  margin: 10px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.photo:hover {
+  transform: scale(1.08);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+.photo img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* ✅ Selected */
+.photo.selected {
+    outline: 3px solid gold;
+}
+
+/* 🎯 Actions */
+.actions {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+}
+
+.actions button {
+    padding: 10px;
+    border: none;
+    background: gold;
+    cursor: pointer;
+}
+
+/* =========================
+   LIGHTBOX
+========================= */
+
+.lightbox {
+    position: fixed;
+    inset: 0;
+
+    background: rgba(0,0,0,0.96);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    z-index: 9999;
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: 0.3s;
+}
+
+.lightbox.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+/* IMAGE */
+.lightbox-img {
+    max-width: 90%;
+    max-height: 80vh;
+
+    border-radius: 12px;
+
+    object-fit: contain;
+}
+
+/* CLOSE */
+.close-btn {
+    position: absolute;
+
+    top: 20px;
+    right: 30px;
+
+    color: white;
+
+    font-size: 50px;
+
+    cursor: pointer;
+}
+
+/* NAVIGATION */
+.nav-btn {
+    position: absolute;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: white;
+
+    font-size: 60px;
+
+    cursor: pointer;
+
+    padding: 10px;
+
+    user-select: none;
+}
+
+.prev-btn {
+    left: 30px;
+}
+
+.next-btn {
+    right: 30px;
+}
+
+/* SELECT BUTTON */
+.select-image-btn {
+    position: absolute;
+
+    bottom: 40px;
+
+    background: gold;
+
+    color: black;
+
+    border: none;
+
+    padding: 14px 28px;
+
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+}
+
+/* SELECTED STATE */
+.select-image-btn.selected {
+    background: limegreen;
+    color: white;
+}
+
+/* PHOTO CARD */
+.photo {
+    position: relative;
+}
+
+/* SELECT CIRCLE */
+.photo-select {
+    position: absolute;
+
+    top: 10px;
+    right: 10px;
+
+    width: 28px;
+    height: 28px;
+
+    border-radius: 50%;
+
+    background: rgba(0,0,0,0.7);
+
+    border: 2px solid white;
+
+    color: white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    z-index: 10;
+
+    transition: 0.3s;
+
+    opacity: 0;
+}
+
+/* SHOW ON HOVER */
+.photo:hover .photo-select {
+    opacity: 1;
+}
+
+/* ACTIVE */
+.photo-select.active {
+    opacity: 1;
+
+    background: gold;
+
+    border-color: gold;
+
+    color: black;
+}

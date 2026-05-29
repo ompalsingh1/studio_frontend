@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Panel</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+
+    <h2>Admin Dashboard 👑</h2>
+
+    <button id="logoutBtn">Logout</button>
+
+    <div class="container">
+
+        <!-- 👥 USERS -->
+        <div class="users">
+            <h3>Users</h3>
+            <ul id="userList"></ul>
+        </div>
+
+        <!-- 📊 USER DETAILS -->
+        <div class="details">
+            <h3>User Details</h3>
+
+            <p><b>Name:</b> <span id="userName">-</span></p>
+            <p><b>Email:</b> <span id="userEmail">-</span></p>
+            <p><b>Total Photos:</b> <span id="totalPhotos">0</span></p>
+            <p><b>Selected Photos:</b> <span id="selectedPhotos">0</span></p>
+
+            <!-- 📤 UPLOAD -->
+            <input type="file" id="photos" multiple>
+            <button id="uploadBtn">Upload Photos</button>
+
+        </div>
+
+    </div>
+
+    <script src="../js/admin.js"></script>
+</body>
+</html>
