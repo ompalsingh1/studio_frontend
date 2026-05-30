@@ -140,18 +140,11 @@ document.getElementById("logoutBtn").addEventListener("click", () => {
     window.location.href = "login.html";
 });
 
-// 🔐 AUTH CHECK
-const token = localStorage.getItem("token");
-const user = JSON.parse(localStorage.getItem("user"));
 
 if (!token || !user || !user.isAdmin) {
     window.location.href = "login.html";
 }
 
-// 📦 ELEMENTS
-const userList = document.getElementById("userList");
-
-let selectedUserId = null;
 
 
 // 👥 LOAD USERS

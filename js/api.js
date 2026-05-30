@@ -1,5 +1,5 @@
-// 🌐 BASE URL
-const API_BASE = "http://localhost:3000/api";
+// // 🌐 BASE URL
+// const API_BASE = "http://localhost:3000/api";
 
 // 🔐 GET TOKEN
 function getToken() {
